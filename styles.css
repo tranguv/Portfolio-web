@@ -338,8 +338,19 @@ label {
     form {
         display: block;
         text-align: center;
-        justify-content: center;
         max-width: max-content;
+        float: none;
+        padding-left: 100px;
+    }
+
+    #contact-text {
+        font-size: 20px;
+        padding: 30px;
+    }
+
+    label {
+        margin-top: -10px;
+        padding-top: 2px;
     }
 }
 
