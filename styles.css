@@ -334,6 +334,13 @@ label {
     ::-webkit-scrollbar{
         display: none;
     }
+
+    form {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        max-width: max-content;
+    }
 }
 
 @font-face {
