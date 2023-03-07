@@ -4,7 +4,7 @@
     max-width: 100%;
     min-width: none;
 }
-li, a {
+li :not(#icon), a {
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
@@ -50,7 +50,6 @@ a.active {
     color: #bfa2c8;
 }
 
-
 html, body { 
     background-color: #DBE2E9;
     margin:0; 
@@ -82,7 +81,6 @@ section {
     background-color: bisque;
 }
 
-
 p {
     white-space: pre-line;
 }
@@ -101,39 +99,38 @@ img {
     margin-right: 10%;
 }
 
-#personal-img{
-    margin-left: 310px;
-    margin-bottom: 10px;
-    border-radius: 5rem;
-    width: 140px;
-    height: 140px;
-}
-
-p #personal-img{
+#home p {
     display: block;
     text-align: center;
     justify-content: center;
 }
 
-/* h1 {
-
-} */
-
 h2 {
-    font-size: medium;
     font-weight: normal;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
+.social_icon {
+    gap: 1.2rem;
+    justify-content: center;
 
-.icon {
-    display: flex;
+}
+
+.social_icon li {
+    display: inline-flex;
+    text-align: center;
+    list-style-type: none;
+}
+
+.social_icon a {
     width: 2rem;
     height: 2rem;
-    border-radius: 5px;
-    justify-content: center;
 }
-
 
 .scrollingPJ {
     text-align: center;
@@ -340,7 +337,6 @@ label {
         text-align: center;
         max-width: max-content;
         float: none;
-        /* padding-left: 100px; */
         margin: 0 auto;
     }
 
@@ -352,6 +348,22 @@ label {
     label {
         margin-top: -10px;
         padding-top: 2px;
+    }
+
+    #homeImg {
+        max-height: 270px;
+    }
+
+    #homeImgDiv {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    p {
+        max-width: 75%;
+        margin: 0 auto;
+        text-align: justify;
     }
 }
 
@@ -403,8 +415,9 @@ textarea {
     height: 150px;
     border-radius: 10px;
     background-color: #ffffff;
-    border-color: #378ab4;
-    border-style:  #378ab4 10px solid;
+    border-color: black;
+    border-style:  black 10px solid;
+    color: black;
 }
 
 input, textarea {

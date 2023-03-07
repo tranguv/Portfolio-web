@@ -26,20 +26,17 @@
   </div>
 
   <section id="home">
-    <!-- <header id="headerHome"></header> -->
     <div class="header_introduction">
-      <img id="homeImg" src="./resource/background.png"/>
-      <p>Hello, I'm <strong>Trang</strong></p>
-      <!-- <p><img id="personal-img" src="./resource/trang.jpg"/></p> -->
-      <h2>Computer Science student, York University</h2>
-      <p>I'm interesting about developing mobile application</p>
-      <p>Beside coding, I enjoy to collect figurines 
-        and decorate my room and workspace</p>
+      <div id="homeImgDiv"><img id="homeImg" src="./resource/background.png"/></div>
+      <div id="introdDiv">
+        <p>Hello, I'm <strong>Trang</strong></p>
+        <p>Computer Science student at York University</p>
+        <p>I'm interesting about developing mobile application. Beside coding, I enjoy to collect figurines and decorate my room and workspace</p>
+      </div>
       <ul class="social_icon">
         <li><a href="https://github.com/tranguv"><img class="icon" src="./resource/github.png" /></a>
-        </li>
-        <li><a href="https://www.linkedin.com/in/trang-vu-a44713210/"><img class="icon"
-              src="./resource/linkedin.png" /></a></li>
+        </li><li><a href="https://www.linkedin.com/in/trang-vu-a44713210/"><img class="icon"
+        src="./resource/linkedin.png" /></a></li>
       </ul>
       
       <div class="header__btn">
@@ -144,8 +141,7 @@
       <fieldset>
         <label for="name">Enter Your Name: <input type="text" name="fullname" placeholder="Your Name" required> </label>
         <label for="email">Enter Your Email: <input type="email" name="email" placeholder="Email Address" required> </label>
-        <label for="inquiry">Enter Your Comment: 
-          <textarea id="msg" name="user_message" placeholder="Leave your comment here"> </textarea>
+        <label for="inquiry">Enter Your Comment: <textarea id="msg" name="user_message" placeholder="Leave your comment here"> </textarea>
         <input type="hidden" name="_next" href="./thankyou.html">
         <input type="hidden" name="_autoresponse" value="Thank you for your interest. I'll get in touch with you as soon as possible!">
       </fieldset>
