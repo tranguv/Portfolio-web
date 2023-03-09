@@ -100,9 +100,27 @@ img {
 }
 
 #home p {
-    display: block;
+    display: flex;
     text-align: center;
     justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#home p:first-of-type {
+    margin-top: 60px;
+}
+
+strong {
+    font-size: xx-large;
+}
+
+#introDiv {
+    display: block;
+    float: left;
+    text-align: center;
+    padding: 100px;
+    margin: 0 auto;
 }
 
 h2 {
@@ -110,13 +128,115 @@ h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.css-typing p {
+    border-right: .15em solid orange;
+    font-family: "Courier";
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.css-typing p:nth-child(1) {
+    width: 7.3em;
+    -webkit-animation: type 2s steps(40, end);
+    animation: type 2s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+    width: 7.5em;
+    opacity: 0;
+    -webkit-animation: type2 2s steps(40, end), blink .5s step-end infinite alternate;
+    animation: type2 2s steps(40, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: .15em solid orange;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@-webkit-keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: .15em solid orange;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .15em solid orange;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes type2 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .15em solid orange;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 
 .social_icon {
-    gap: 1.2rem;
+    display: grid;
+    text-align: center;
+    font-size: 3rem;
+    grid-template-columns: repeat(3, 0.08fr);
+    grid-auto-flow: column;
+    grid-auto-columns: 0.6fr;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px;
     justify-content: center;
 
 }
@@ -411,7 +531,6 @@ header {
 
 textarea {
     margin-top: 5px;
-    width: 100%;
     height: 150px;
     border-radius: 10px;
     background-color: #ffffff;
