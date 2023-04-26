@@ -287,6 +287,10 @@ p {
     -webkit-appearance: none;
 }
 
+/* #pj1 {
+    background-image: url(.resource/guessing.png);
+} */
+
 .hidden {
     display: none;
     position: absolute;
