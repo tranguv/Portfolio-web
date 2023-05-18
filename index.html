@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trang Vu</title>
-  <link href="Cadisone Sans.otf"/>
+  <link href="Cadisone Sans.otf" />
   <link href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
   <link rel="stylesheet" href="styles.css" />
@@ -25,46 +25,81 @@
     </nav>
   </div>
 
-  <section id="home">    
+  <section id="home">
     <div class="header_introduction">
-      <div id="homeImgDiv"><img id="homeImg" src="./resource/background.png"/></div>
+      <div id="homeImgDiv"><img id="homeImg" src="./resource/background.png" /></div>
       <div id="introdDiv">
         <div class="css-typing">
           <p>Hello, I'm</p>
           <p><strong>Trang</strong></p>
         </div>
-          <p>Computer Science student at York University</p>
-          <p>I'm interesting about developing mobile application. 
-            Beside coding, I enjoy to collect figurines and decorate my room and workspace</p>
+        <p>Computer Science student at York University</p>
+        <p>I'm interesting about developing mobile application.
+          Beside coding, I enjoy to collect figurines and decorate my room and workspace</p>
       </div>
-      <ul class="social_icon">
-        <li><a href="https://github.com/tranguv"><img class="icon" src="./resource/github.png" /></a></li>
-        <li><a href="https://www.linkedin.com/in/trang-vu-a44713210/"><img class="icon"src="./resource/linkedin.png"/></a></li>
-        <li><a href="https://www.instagram.com/tranguv/"><img class="icon" src="./resource/ig.png"></i></a></li>
-      </ul>
-      
-      <div class="header__btn">
-        <a href="./resource/Trang Vu Resume.pdf" download="trangvu-resume" rel="noreferrer" target="_blank" class="btn">Download Resume<svg stroke="currentColor" fill="none" 
-          stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-          <polyline points="7 10 12 15 17 10"></polyline>
-          <line x1="12" y1="15" x2="12" y2="3"></line></svg></a>
+      <div id="social-icons">
+        <ul class="social_icon">
+          <li><a href="https://github.com/tranguv"><img class="icon" src="./resource/github.png" /></a></li>
+          <li><a href="https://www.linkedin.com/in/trang-vu-a44713210/"><img class="icon"
+                src="./resource/linkedin.png" /></a></li>
+          <li><a href="https://www.instagram.com/tranguv/"><img class="icon" src="./resource/ig.png"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="resume-btn">
+        <a href="./resource/Trang Vu Resume.pdf" download="trangvu-resume" rel="noreferrer" target="_blank"
+          class="btn">Download Resume<svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24"
+            stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg></a>
       </div>
     </div>
   </section>
 
   <section id="experience">
-    <header>Work  & Leadership
-      <br/><small>experience</small></header>
+    <header>Work & Leadership
+      <br /><small>experience</small>
+    </header>
     <div class="float-container-experience">
-      <div id="work-nav-bar">
-        <button onclick="onClick()" id="computing">Computing Support Assistant</button>
-        <button onclick="onClick()" id="it">Information Technology Assistant</button>
-        <button onclick="onClick()" id="club">Japanese Cultural Club</button>
+      <div class="sidebar">
+        <button id="computing" class="active work-button" onclick="showContent(1)">Computing Support Assistant</button>
+        <button id="club" class="work-button" onclick="showContent(2)">Information Technology Assistant</button>
+        <button id="it" class="work-button" onclick="showContent(3)">Japanese Cultural Club</button>
       </div>
-      <div id="text-container">
-        
+
+      <div id="content">
+        <div id="content-1" class="content-item active">
+          <ul id="computingText">
+            <li>► Proficient in providing exceptional technical support on-site, phone, live chat, and email channels.
+            </li>
+            <li>► Experienced in troubleshooting various technical issues including network connections, setting up new
+              user accounts and adept at providing prompt and efficient resolution to user issues.</li>
+            <li>► Skilled in recording, tracking, and escalating incidents via ticketing systems for efficient
+              resolution.</li>
+            <li>► Strong ability to work effectively in a team and independently.</li>
+            <li>► Maintains up-to-date knowledge on the latest technologies and advancements in the industry.</li>
+          </ul>
+        </div>
+
+        <div id="content-2" class="content-item">
+          <ul id="itText">
+            <li>► Installation, maintenance, and support of software applications, ensuring their smooth operation and
+              adherence to security protocols.</li>
+            <li>► Resolution of hardware and software issues pertaining to workstations and network systems through
+              troubleshooting techniques.</li>
+            <li>► Provision of technical support and guidance to users, addressing their inquiries and concerns promptly.</li>
+            <li>► Creation and maintenance of comprehensive documentation for service requests and incidents using a work
+              ticketing system.</li>
+            <li>► Contribution to process development initiatives aimed at enhancing service quality and efficiency.</li>
+            <li>► Assistance in the support and management of classroom technology to facilitate effective learning
+              environments.</li>
+          </ul>
+        </div>
+        <div id="content-3" class="content-item">Text3</div>
       </div>
+
     </div>
 
   </section>
@@ -72,60 +107,66 @@
   <section id="side-project">
     <header>Projects</header>
     <div class="arrow">
-      <button class="left" onclick="leftScroll()" type="button"><span style="display: inline-block; transform: rotate(270deg);">
-        <svg aria-label="Next" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="16" role="img" viewBox="0 0 24 24" width="16">
-        <path d="M21 17.502a.997.997 0 0 1-.707-.293L12 8.913l-8.293 8.296a1 1 0 1 1-1.414-1.414l9-9.004a1.03 1.03 0 0 1 1.414 0l9 9.004A1 1 0 0 1 21 17.502Z">
-        </path></svg></span></button>
+      <button class="left" onclick="leftScroll()" type="button"><span
+          style="display: inline-block; transform: rotate(270deg);">
+          <svg aria-label="Next" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="16" role="img"
+            viewBox="0 0 24 24" width="16">
+            <path
+              d="M21 17.502a.997.997 0 0 1-.707-.293L12 8.913l-8.293 8.296a1 1 0 1 1-1.414-1.414l9-9.004a1.03 1.03 0 0 1 1.414 0l9 9.004A1 1 0 0 1 21 17.502Z">
+            </path>
+          </svg></span></button>
       <div class="scrollingPJ">
         <div class="pj" id="pj1">
-          <a  href="https://github.com/tranguv/NumberGuess">
-          <div class="box">
-            <p class="title">Guessing Game</p>
-            <button class="tag hidden">Java</button> <br>
-            <button class="tag hidden">Android Studio</button>
-          </div>
-        </a>
+          <a href="https://github.com/tranguv/NumberGuess">
+            <div class="box">
+              <p class="title">Guessing Game</p>
+              <button class="tag hidden">Java</button> <br>
+              <button class="tag hidden">Android Studio</button>
+            </div>
+          </a>
         </div>
 
         <div class="pj" id="pj2">
-          <a href="https://github.com/tranguv/Memory-Game" >
-          <div class="box">
-            <p class="title">Memory Matching Game</p>
-            <button class="tag hidden">Java</button> <br>
-            <button class="tag hidden">Android Studio</button> <br>
-            <button class="tag hidden">Completed</button>
-          </div>
-        </a>
+          <a href="https://github.com/tranguv/Memory-Game">
+            <div class="box">
+              <p class="title">Memory Matching Game</p>
+              <button class="tag hidden">Java</button> <br>
+              <button class="tag hidden">Android Studio</button> <br>
+            </div>
+          </a>
         </div>
         <div class="pj" id="pj3">
           <a href="https://trangvu.netlify.app/">
             <div class="box">
-              <p class="title">Personal Website</p>
-              <button class="tag hidden">HTML</button><br>
-              <button class="tag hidden">CSS</button> <br>
-              <button class="tag hidden">Completed</button>
+              <p class="title">Personal Website</p><br />
+              <button class="tag hidden">HTML</button> <button class="tag hidden">CSS</button> <br>
+              <button class="tag hidden">JavaScript</button>
             </div>
           </a>
         </div>
         <div class="pj bgimg" id="pj4">
-          <a href="https://github.com/tranguv/Chinese-Chess">
-          <div class="box">
-            <p class="title">Chess Game</p>
-            <button class="tag hidden">Java</button><br>
-            <button class="tag hidden">Java Swing</button> <br>
-            <button class="tag hidden">Ongoing</button>
-          </div>
-        </a>
+          <a href="https://github.com/BinniesLite/finance_app">
+            <div class="box">
+              <p class="title">Personal Finance App</p>
+              <button class="tag hidden">React</button> <button class="tag hidden">HTML</button>
+              <button class="tag hidden">CSS</button> <br>
+              <button class="tag hidden">NodeJS</button> <button class="tag hidden">SQL</button><br>
+            </div>
+          </a>
         </div>
         <div class="pj" id="pj5"></div>
         <div class="pj" id="pj6"></div>
-        
+
 
       </div>
-      <button class="right" onclick="rightScroll()" type="button"><span style="display: inline-block; transform: rotate(90deg);">
-        <svg aria-label="Next" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="16" role="img" viewBox="0 0 24 24" width="16">
-          <path d="M21 17.502a.997.997 0 0 1-.707-.293L12 8.913l-8.293 8.296a1 1 0 1 1-1.414-1.414l9-9.004a1.03 1.03 0 0 1 1.414 0l9 9.004A1 1 0 0 1 21 17.502Z">
-          </path></svg></span></button>
+      <button class="right" onclick="rightScroll()" type="button"><span
+          style="display: inline-block; transform: rotate(90deg);">
+          <svg aria-label="Next" class="_ab6-" color="rgb(0, 0, 0)" fill="rgb(0, 0, 0)" height="16" role="img"
+            viewBox="0 0 24 24" width="16">
+            <path
+              d="M21 17.502a.997.997 0 0 1-.707-.293L12 8.913l-8.293 8.296a1 1 0 1 1-1.414-1.414l9-9.004a1.03 1.03 0 0 1 1.414 0l9 9.004A1 1 0 0 1 21 17.502Z">
+            </path>
+          </svg></span></button>
     </div>
   </section>
 
@@ -137,18 +178,22 @@
     <form action="https://formsubmit.co/annavu3806@gmail.com" method="POST">
       <fieldset>
         <label for="name">Enter Your Name: <input type="text" name="fullname" placeholder="Your Name" required> </label>
-        <label for="email">Enter Your Email: <input type="email" name="email" placeholder="Email Address" required> </label>
-        <label for="inquiry">Enter Your Comment: <textarea id="msg" name="user_message" placeholder="Leave your comment here"> </textarea>
-        <input type="hidden" name="_next" href="./thankyou.html">
-        <input type="hidden" name="_autoresponse" value="Thank you for your interest. I'll get in touch with you as soon as possible!">
+        <label for="email">Enter Your Email: <input type="email" name="email" placeholder="Email Address" required>
+        </label>
+        <label for="inquiry">Enter Your Comment: <textarea id="msg" name="user_message"
+            placeholder="Leave your comment here"> </textarea>
+          <input type="hidden" name="_next" href="./thankyou.html">
+          <input type="hidden" name="_autoresponse"
+            value="Thank you for your interest. I'll get in touch with you as soon as possible!">
       </fieldset>
       <button id="submit_btn" type="submit">Submit</button>
     </form>
   </section>
-  
+
   <a href="#header" id="arrow-up"></a>
 </body>
 <footer>
   <div class="footer_copyright"><small>© Trang Vu. All rights reserved 2023.</small></div>
 </footer>
+
 </html>

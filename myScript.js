@@ -9,24 +9,23 @@ function rightScroll() {
     right.scrollBy(500, 0);
 }
 
-function onClick() {
-  const button1 = document.getElementById("computing");
-  const button2 = document.getElementById("it");
-  const button3 = document.getElementById("club");
-  const textContainer = document.getElementById("text-container");
-
-  button1.addEventListener("click", function() {
-    textContainer.innerHTML ="<ul><li>► Proficient in providing exceptional technical support on-site, phone, live chat, and email channels.</li><li>► Experienced in troubleshooting various technical issues including network connections, setting up new user accounts and adept at providing prompt and efficient resolution to user issues.</li><li>► Skilled in recording, tracking, and escalating incidents via ticketing systems for efficient resolution.</li><li>► Strong ability to work effectively in a team and independently.</li><li>► Maintains up-to-date knowledge on the latest technologies and advancements in the industry.</li></ul>"; 
-    textContainer.style.display = "block";
-  });
-
-  button2.addEventListener("click", function() {
-    textContainer.textContent = "This is the text for Button 2";
-    textContainer.style.display = "block";
-  });
-
-  button3.addEventListener("click", function() {
-    textContainer.textContent = "This is the text for Button 3";
-    textContainer.style.display = "block";
-  });
+function showContent(id) {
+  // Get all content items
+  var contentItems = document.getElementsByClassName('content-item');
+  
+  // Hide all content items
+  for (var i = 0; i < contentItems.length; i++) {
+    contentItems[i].classList.remove('active');
+  }
+  
+  // Show the selected content item
+  var selectedContent = document.getElementById('content-' + id);
+  selectedContent.classList.add('active');
+  
+  // Set the active class on the selected sidebar item
+  var sidebarItems = document.getElementsByClassName('sidebar')[0].getElementsByTagName('a');
+  for (var i = 0; i < sidebarItems.length; i++) {
+    sidebarItems[i].classList.remove('active');
+  }
+  sidebarItems[id-1].classList.add('active');
 }

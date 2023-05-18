@@ -54,7 +54,7 @@ html, body {
     background-color: #DBE2E9;
     margin:0; 
     padding:0; 
-    height: fit-content; 
+    height: 100%; 
     width:100%; 
 }
 
@@ -302,9 +302,12 @@ p {
     background-image: url('./resource/memorygame.jpg');
 }
 
-.hidden {
+#pj4:hover{
+    background-image: url('./resource/finance-app.jpg');
+}
+
+.pj .hidden {
     display: none;
-    position: absolute;
 }
 
 .pj:hover {
@@ -332,11 +335,12 @@ p {
     transform: scale(0.98);
 }
 
-button {
+button:not(.work-button) {
     display: inline-block;
-    border: white;
-    border-style: double;
-    border-radius: 20px;
+    border: rgb(241, 239, 239);
+    border-style: solid;
+    size: 25px;
+    border-radius: 10px;
     text-align: center;
     white-space: nowrap;
     font-size: 11px;
@@ -462,10 +466,20 @@ label {
     text-transform: none;
 }
 
+/* #social-icons {
+    text-align: center;
+} */
+
+
+
 @media only screen and (max-width: 820px)  {
     ::-webkit-scrollbar{
         display: none;
     }
+/* 
+    section #home {
+        max-height: 100%;
+    } */
 
     form {
         display: block;
@@ -486,7 +500,7 @@ label {
     }
 
     #homeImg {
-        max-height: 270px;
+        max-height: 150px;
     }
 
     #homeImgDiv {
@@ -544,6 +558,11 @@ header {
     text-align: center;
 }
 
+.resume-btn {
+    text-align: center;
+    padding: 15px;
+}
+
 textarea {
     margin-top: 5px;
     height: 150px;
@@ -561,19 +580,60 @@ input, textarea {
     box-sizing: border-box;
 }
 
-float-left {
-    float: left;
-    display: block;
-    max-width: 200px;
-}
-
-float-right {
-    float: right;
-    display: block;
-    max-width: 500px;
-}
-
 #text-container {
     display: none;
     max-width: 500px;
 }
+
+.float-container-experience {
+    padding: 10px; 
+    text-align: center;
+    margin: auto;
+}
+
+.sidebar {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.sidebar button {
+    padding: 5px;
+    background-color: black;
+    font-size: medium;
+    /* border-style: ; */
+    border-color: #bfa2c8;
+    border-width: 5px;
+
+}
+   
+.content-item {
+    display: none;
+    padding: 20px;
+}
+
+.content-item.active {
+    display: block;
+}
+  
+.float-container-experience .work-button {
+    text-align: center;
+    display: inline-block;
+    gap: 10px;
+    border-right-color: #008bf8;
+    color: rgb(13, 194, 13);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#computingText, #itText, #clubText {
+    padding: 20px;
+    margin: auto;
+    text-align: justify;
+    list-style-type: none;
+    max-width: 600px;
+}
+
+.content-item li {
+    margin-bottom: 10px;
+}
+
