@@ -33,9 +33,9 @@
           <p>Hello, I'm</p>
           <p><strong>Trang</strong></p>
         </div>
-        <p>Computer Science student at York University</p>
-        <p>I'm interesting about developing mobile application.
-          Beside coding, I enjoy to collect figurines and decorate my room and workspace</p>
+        <p>a junior majoring in Computer Science at York University</p>
+        <p>I'm interesting about developing mobile and web 
+          application. Beside coding, I enjoy to collect figurines and decorate my room and workspace</p>
       </div>
       <div id="social-icons">
         <ul class="social_icon">
@@ -66,7 +66,8 @@
       <div class="sidebar">
         <button id="computing" class="active work-button" onclick="showContent(1)">Computing Support Assistant</button>
         <button id="club" class="work-button" onclick="showContent(2)">Information Technology Assistant</button>
-        <button id="it" class="work-button" onclick="showContent(3)">Japanese Cultural Club</button>
+        <button id="it" class="work-button" onclick="showContent(3)">Google Developer Student Clubs</button>
+        <button id="yuhacks" class="work-button" onclick="showContent(4)">YuHacks</button>
       </div>
 
       <div id="content">
@@ -84,20 +85,40 @@
         </div>
 
         <div id="content-2" class="content-item">
+          <p>May 2023 - Present</p>
           <ul id="itText">
             <li>► Installation, maintenance, and support of software applications, ensuring their smooth operation and
               adherence to security protocols.</li>
-            <li>► Resolution of hardware and software issues pertaining to workstations and network systems through
-              troubleshooting techniques.</li>
-            <li>► Provision of technical support and guidance to users, addressing their inquiries and concerns promptly.</li>
-            <li>► Creation and maintenance of comprehensive documentation for service requests and incidents using a work
-              ticketing system.</li>
-            <li>► Contribution to process development initiatives aimed at enhancing service quality and efficiency.</li>
-            <li>► Assistance in the support and management of classroom technology to facilitate effective learning
-              environments.</li>
+            <li>► Built default computer configuration and reduced imaging time by 75%</li>
+            <li>► Performed routine maintenance 60% of campus computers, printers, projectors, and cameras used in classroom</li>
+            <li>► Resolved 95% of hardware and software issues on Windows and Linux for faculty, students, and staff within SLA</li>
+            <li>► Maintained 100+ computers and other hardware to optimize performance and security as per IT standards</li>
           </ul>
         </div>
-        <div id="content-3" class="content-item">Text3</div>
+        <div id="content-3" class="content-item">
+          <p>Co Lead</p>
+          <p>August 2023 - Present</p>
+          <ul id="clubText">
+            <li>► Organized and hosted events to promote Google technologies and build a community of developers</li>
+            <li>► Collaborated with other members to plan and execute events</li>
+            <li>► Developed and maintained a website for the club</li>
+            <li>► Created and managed social media accounts for the club</li>
+            <li>► Provided technical support for the club</li>
+          </ul>
+        </div>
+
+        <!-- YuHacks -->
+        <div id="content-4" class="content-item">
+          <p>Frontend Developer</p>
+          <p>June 2023 - September 2023</p>
+          <ul id="clubText">
+            <li>► Collaborated with a team of 5 to build the front end of a hackathon event website using Next.js framework, ReactJS, and Typescript</li>
+            <li>► Utilized the Tailwind CSS’s responsive utility class to quickly style components, remove unused CSS styles and
+              create a clean, responsive design that works across multiple screen widths</li>
+            <li>► Leveraged lightweight Particle.js Javascript library to customize animated background</li>
+            <li>► Made API calls using Axios library within useEffect hooks and mapping the response to component state</li>
+          </ul>
+        </div>
       </div>
 
     </div>
@@ -148,14 +169,32 @@
           <a href="https://github.com/BinniesLite/finance_app">
             <div class="box">
               <p class="title">Personal Finance App</p>
-              <button class="tag hidden">React</button> <button class="tag hidden">HTML</button>
+              <button class="tag hidden">React</button> <button class="tag hidden">HTML</button> <button class="tag hidden">Docker</button>
               <button class="tag hidden">CSS</button> <br>
-              <button class="tag hidden">NodeJS</button> <button class="tag hidden">SQL</button><br>
+              <button class="tag hidden">NodeJS</button> <button class="tag hidden">Prisma</button> <button class="tag hidden">PostgreSQL</button><br>
             </div>
           </a>
         </div>
-        <div class="pj" id="pj5"></div>
-        <div class="pj" id="pj6"></div>
+        <div class="pj bgimg" id="pj5">
+          <a href="https://github.com/tranguv/Social-Media-App">
+            <div class="box">
+              <p class="title">Social Media Web</p>
+              <button class="tag hidden">React</button> <button class="tag hidden">Redux</button> <button class="tag hidden">HTML</button>
+              <button class="tag hidden">CSS</button> <button class="tag hidden">ExpressJS</button>
+              <button class="tag hidden">NodeJS</button> <button class="tag hidden">MongoDB</button><br>
+
+            </div>
+          </a>
+        </div>
+        <div class="pj" id="pj6">
+          <a href="https://github.com/tranguv/Nutrient-App">
+            <div class="box">
+              <p class="title">Nutrient Tracking App</p>
+              <button class="tag hidden">Java</button> <button class="tag hidden">Java Swing</button> <button class="tag hidden">MySQL</button>
+              <button class="tag hidden">AWS</button> <button class="tag hidden">JFreeChart</button> <button class="tag hidden">In progress</button>
+            </div>
+          </a>
+        </div>
 
 
       </div>
@@ -181,7 +220,7 @@
         <label for="email">Enter Your Email: <input type="email" name="email" placeholder="Email Address" required>
         </label>
         <label for="inquiry">Enter Your Comment: <textarea id="msg" name="user_message"
-            placeholder="Leave your comment here"> </textarea>
+            placeholder="Leave your comment here"></textarea>
           <input type="hidden" name="_next" href="./thankyou.html">
           <input type="hidden" name="_autoresponse"
             value="Thank you for your interest. I'll get in touch with you as soon as possible!">
